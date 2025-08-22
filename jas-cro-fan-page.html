@@ -10,8 +10,6 @@
     <h1><a href="index.html"><img src="images/mk-logo.svg" width="20" /></a> Jasmine Crockett Fanpage</h1>
     <nav>
         <a href="index.html">Home</a>
-        <br><em><a href="#currentevents">Current Events</a> | <a href="#earlylife">Early Life</a> | <a
-                href="#survey">Tell Us What You Think</a> <-- Use these anchors to navigate this page</em>
     </nav>
     <img src="images/jas-cro-page-hero.png" width="560" alt="Congresswoman Jasmin Crockett giving a speach" />
     <p>Jasmin Crockett is more than just a Congresswoman — she’s a fearless fighter, a truth-teller, and one of the most
@@ -25,6 +23,20 @@
             viral</a>, inspiring
         supporters across the country who see her as proof that passion, intelligence, and authenticity still have a
         place in politics. Jasmin Crockett isn’t just serving her district — she’s building a movement.</p>
+        <ul>
+            <li>
+                <a href="#currentevents">Current Events</a>
+            </li>
+            <li>
+                <a href="#earlylife">Early Life</a>
+            </li>
+            <li>
+                <a href="#keymoments">Key Moments</a>
+            </li>
+            <li>
+                <a href="#survey">Tell Us What You Think</a>
+            </li>
+        </ul>
     <section id="currentevents">
         <h2>Current Events</h2>
         <img src="images/jas-cro-current-events.png" alt="Jasmin Crockett and MTG" />
@@ -57,11 +69,92 @@
             the name of fairness and equality.
         </p>
     </section>
+    <section id="keymoments">
+        <h2>Key Moments</h2>
+        <img src="images/jas-cro-key-moments.png" width="560" alt="Jasmine Crockett celebrating on a stage" />
+        <p>Jasmin Crockett’s journey is filled with powerful milestones that showcase her fearless leadership and
+            growing national influence. From her historic election win to headline-making speeches and committee
+            moments, each event marks another step in her rise as one of today’s most authentic voices in politics. Here
+            are a few highlights:</p>
+        <table border="1" cellpadding="10">
+            <thead>
+                <tr>
+                    <th>
+                        Date
+                    </th>
+                    <th>
+                        Location
+                    </th>
+                    <th>
+                        Event
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Nov 8, 2022
+                    </td>
+                    <td>
+                        Dallas, Texas
+                    </td>
+                    <td>
+                        <a href="https://www.keranews.org/news/2022-11-08/jasmine-crockett-succeeds-eddie-bernice-johnson-in-dallas-congressional-race" target="_blank">Elected to U.S. House representing Texas's 30th Congressional District</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        May 18, 2023
+                    </td>
+                    <td>
+                        Washington, D.C.
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/watch?v=MAB07VSOXy0&" target="_blank">Made headlines in Judiciary Committee hearing calling out GOP theatrics</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Aug 14, 2024
+                    </td>
+                    <td>
+                        Martha's Vineyard, MA
+                    </td>
+                    <td>
+                    <a href="https://ground.news/article/cant-hang-out-with-the-kkk-jasmine-crockett-says-conservative-black-people-dont-join-gop-because-republicans-are-racist" target=_blank">Spoke at African American Film Festival; denounced GOP as “racist”</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Aug 21, 2025
+                    </td>
+                    <td>
+                        Podcast with Gavin Newsom
+                    </td>
+                    <td>
+                        <a href="https://news.grabien.com/wire-jasmine-crockett-calls-trump-and-maga-voters-the-most-unpatriotic-peop" target="_blank">Called Trump and MAGA voters “the most unpatriotic people”</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Aug 2025
+                    </td>
+                    <td>
+                        Fort Bliss, Texas
+                    </td>
+                    <td>
+                        <a href="https://crockett.house.gov/media/press-releases/rep-jasmine-crockett-visits-fort-bliss-condemns-trumps-plan-turn-base-mass" target="_blank">Denounced proposed immigration detention camp during site visit</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
     <section id="survey">
         <h2>Tell Us What <em>You</em> Think</h2>
         <img src="images/jas-cro-surv-image.png"
             alt="a cartoon image of a smiling computer asking the user to fill out the form" width="560" />
-        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
+            target="_blank">
             <fieldset>
                 <legend>CONTACT INFO</legend>
                 <div>
@@ -98,19 +191,21 @@
             <fieldset>
                 <legend>HOW MUCH DO YOU LIKE JASMINE CROCKETT?</legend>
                 <label for="oneToOneHundredRating">0</label>
-                <input id="oneToOneHundredRating" name="oneToOneHundredRating" type="range" min="0" max="100" value="100">
-                    <label for="oneToOneHundredRating">100</label>
+                <input id="oneToOneHundredRating" name="oneToOneHundredRating" type="range" min="0" max="100"
+                    value="100">
+                <label for="oneToOneHundredRating">100</label>
             </fieldset>
             <fieldset>
                 <legend>YOUR FAVORITE JASMINE CROCKETT STORY</legend>
                 <textarea id="favStory" name="favStory" rows="20" cols="60" placeholder="Your story here"></textarea>
-                <img src="images/jas-cro-point.png" width="589"/>
+                <img src="images/jas-cro-point.png" width="589" />
             </fieldset>
             <input type="submit" value="Submit Form" />
         </form>
     </section>
     <footer>
-        <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a> | © 2025 Michael Kaffel | <a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a>
+        <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a> | © 2025 Michael Kaffel | <a
+            href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a>
     </footer>
 </body>
 
