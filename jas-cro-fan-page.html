@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jasmine Crockett Fanpage</title>
+</head>
+
+<body>
+    <h1><a href="index.html"><img src="images/mk-logo.svg" width="20" /></a> Jasmine Crockett Fanpage</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <br><em><a href="#currentevents">Current Events</a> | <a href="#earlylife">Early Life</a> | <a
+                href="#survey">Tell Us What You Think</a> <-- Use these anchors to navigate this page</em>
+    </nav>
+    <img src="images/jas-cro-page-hero.png" width="560" alt="Congresswoman Jasmin Crockett giving a speach" />
+    <p>Jasmin Crockett is more than just a Congresswoman — she’s a fearless fighter, a truth-teller, and one of the most
+        refreshing voices in American politics today. Representing Texas’s 30th District, Jasmin brings her background
+        as a <a href="crockett.house.gov" target="_blank">civil rights attorney</a> into every battle she takes on in
+        Washington. She’s unapologetic, sharp, and never
+        afraid to <a href="https://youtu.be/ZlCoMjcUpl4?si=NbQ4bN8fuKjNa_Wq" target="_blank">call things exactly as she
+            sees them</a>, whether she’s standing up for voting rights, challenging
+        corruption, or pushing for real economic justice. Her <a
+            href="https://www.instagram.com/reel/C7HkhxVgSlm/?hl=en" target="_blank">fiery committee moments often go
+            viral</a>, inspiring
+        supporters across the country who see her as proof that passion, intelligence, and authenticity still have a
+        place in politics. Jasmin Crockett isn’t just serving her district — she’s building a movement.</p>
+    <section id="currentevents">
+        <h2>Current Events</h2>
+        <img src="images/jas-cro-current-events.png" alt="Jasmin Crockett and MTG" />
+        <p>Congresswoman Jasmin Crockett continues to make headlines as one of the most outspoken and dynamic voices in
+            the House. Known for her sharp questioning, fearless defense of democratic values, and <a
+                href="https://www.youtube.com/watch?v=6tto16-XbrQ" target="_blank">unapologetic
+                authenticity</a>, she has become a rising star on the national stage. From committee hearings that go
+            viral to
+            her advocacy for <a href="https://www.youtube.com/watch?v=sqzwWK9LPJg" target=_blank">voting rights</a>, <a
+                href="https://www.youtube.com/watch?v=OrYNMAvz8EM" target="_blank">economic justice</a>, and <a
+                href="https://www.youtube.com/watch?v=9gOWKcpSC8w" target="_blank">accountability</a> in government,
+            Crockett has captured
+            public attention as both a fighter for her constituents and a leader shaping the broader political
+            conversation. This section will highlight her latest appearances, statements, and initiatives as they unfold
+            in real time.</p>
+    </section>
+    <section>
+        <h2 id="earlylife">Early Life</h2>
+        <img src="images/jas-cro-early-life.png" width="560" alt="Jasmine Crockett recieving her diploma" />
+        <p>Jasmin Crockett was born and raised in St. Louis, Missouri, where she quickly developed the resilience and
+            determination that would define her career. The <a
+                href="https://www.theroot.com/the-evolution-of-jasmine-crockett-1851514946?utm_source=chatgpt.com"
+                target="_blank">daughter of working-class parents</a>, she grew up with a strong
+            sense of justice and an unshakable belief in standing up for what's right. After earning her undergraduate
+            degree in business, she went on to study law at the <a href="https://www.tsulaw.edu/"
+                target="_blank">Thurgood Marshall School of Law at Texas Southern
+                University</a>, where she honed her passion for civil rights and advocacy. Those early years shaped her
+            into the
+            fighter she is today—grounded in community, fueled by purpose, and ready to take on powerful institutions in
+            the name of fairness and equality.
+        </p>
+    </section>
+    <section id="survey">
+        <h2>Tell Us What <em>You</em> Think</h2>
+        <img src="images/jas-cro-surv-image.png"
+            alt="a cartoon image of a smiling computer asking the user to fill out the form" width="560" />
+        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post">
+            <fieldset>
+                <legend>CONTACT INFO</legend>
+                <div>
+                    <label for="firstName">First name: </label>
+                    <input name="firstName" type="text" id="firstName" placeholder="Your first name" required />
+                    <label for="lastName">Last name: </label>
+                    <input name="lastName" type="text" id="lastName" placeholder="Your last name" required />
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email: </label>
+                    <input name="email" type="email" id="email" placeholder="Your last name" required />
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>WHAT IS YOUR POLITICAL AFFILIATION?</legend>
+                <div>
+                    <input type="radio" id="democrat" value="democrat" name="politicalAff" />
+                    <label for="democrat">Democrat</label>
+                </div>
+                <div>
+                    <input type="radio" id="republican" value="republican" name="politicalAff" />
+                    <label for="republican">Republican</label>
+                </div>
+                <div>
+                    <input type="radio" id="independent" value="independent" name="politicalAff" />
+                    <label for="independent">Independent</label>
+                </div>
+                <div>
+                    <input type="radio" id="notsaying" value="notsaying" name="politicalAff" />
+                    <label for="notsaying">Prefer not to say</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>HOW MUCH DO YOU LIKE JASMINE CROCKETT?</legend>
+                <label for="oneToOneHundredRating">0</label>
+                <input id="oneToOneHundredRating" name="oneToOneHundredRating" type="range" min="0" max="100" value="100">
+                    <label for="oneToOneHundredRating">100</label>
+            </fieldset>
+            <fieldset>
+                <legend>YOUR FAVORITE JASMINE CROCKETT STORY</legend>
+                <textarea id="favStory" name="favStory" rows="20" cols="60" placeholder="Your story here"></textarea>
+                <img src="images/jas-cro-point.png" width="589"/>
+            </fieldset>
+            <input type="submit" value="Submit Form" />
+        </form>
+    </section>
+    <footer>
+        <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a> | © 2025 Michael Kaffel | <a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a>
+    </footer>
+</body>
+
+</html>
