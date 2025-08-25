@@ -167,10 +167,10 @@
                 href="https://docs.github.com/en/pages" target="_blank">pages feature</a> to host my first coding
             experiments. Additionally, I took an
             intro to <a href="https://codemify.com/" target="_blank">QA automation course</a> which introduced me to
-            some really cool software (cypress) and was a great
+            some really cool software (<a href="https://www.cypress.io/" target="_blank">cypress</a>) and was a great
             crashcourse into javascript and the CLI.
         </span>
-        <h3>Resources:</h3>
+        <h3>Free Resources:</h3>
         <ul>
             <li><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a></li>
             <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
@@ -198,14 +198,13 @@
             <li>Backpacking</li>
             <li>SUPs</li>
             <li>Hangin out in my van down by the river</li>
-            <audio src="mp3s/river-audio-clip-profile page.mp3" controls />
+            <audio src="mp3s/river-audio-clip-profile page.mp3" controls>Your browser does not support HTML5 audio. Here is <a href="mp3s/river-audio-clip-profile page.mp3">link to the
+                audio</a> instead.</audio>
         </ul>
         <p>My absolute favorite way to spend my time not working is camping by a lake or river and watching my dog do
             this all day (see video below)</p>
-        <video src="videos/my-profile-lu-swimming.mov" controls loop width="560">
-            Your broweser does not support HTML5 video. Here is <a href="videos/my-profile-lu-swimming.mov">a link to
-                the video</a> instead.</a>
-        </video>
+        <video src="videos/my-profile-lu-swimming.mov" controls width="560">Your broweser does not support HTML5 video. Here is <a href="videos/my-profile-lu-swimming.mov">link to the
+                video</a> instead.</video>
     </section>
     <hr>
     <section id="tellmeaboutyou">
@@ -228,13 +227,23 @@
             <fieldset>
                 <legend>Type of Activities</legend>
                 <div>
-                    Do you like the outdoors?:
+                    <label for="likeOutside">Do you like the outdoors?:</label><br>
+                    <select id="likeOutside" name="likeOutside">
+                        <option value="">Choose and option</option>
+                        <option value="yes">Yes</option>
+                        <option value="sorta">Yes but only to look at</option>
+                        <option value="no">Not really</option>
+                    </select>
+
+                    <!--
                     <input type="radio" id="yes" name="doyoulike" value="yes" />
                     <label for="baseball">Yes, I like outdoor activities</label>
                     <input type="radio" id="sorta" name="doyoulike" value="sorta" />
                     <label for="rugby">Yes but only to look at</label>
                     <input type="radio" id="no" name="doyoulike" value="no" />
-                    <label for="snowboarding">Not really</label>
+                    <label for="no">Not really</label> 
+
+                    -->
                 </div>
                 <br>
                 <div>
@@ -254,6 +263,10 @@
                     <div>
                         <input type="checkbox" id="camping" name="activities" value="camping" />
                         <label for="camping">Camping</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="other" name="activities" value="other" />
+                        <label for="other">I like other activities</label>
                     </div>
                 </div>
             </fieldset>
