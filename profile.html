@@ -5,171 +5,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile Page</title>
+    <link rel="stylesheet" href="css/profile-styles.css" />
 </head>
 
 <body>
-    <h1><a href="index.html"><img src="images/mk-logo.svg" width="20" /></a> My Profile Page</h1>
+    <div class="header-element">
+        <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+       <h1>My Profile Page</h1>
+    </div>
     <nav>
         <a href="index.html">Home</a>
         <br>
-        <em><a href="#aboutme">About Me</a> | <a href="#codingjourney">My Coding Journey</a> | <a href="#mytime">How I
-                Spend My Time</a> |<a href="#tellmeaboutyou">Tell Me About Yourself</a> <-- Use these anchors to
-                navigate this page</em>
+        <a href="#aboutme">About Me</a> | <a href="#codingjourney">My Coding Journey</a> | <a href="#mytime">How I
+                Spend My Time</a> | <a href="#tellmeaboutyou">Tell Me About Yourself</a>
     </nav>
     <hr>
-    <img src="images/profile-hero.png" width="560" />
+    <img src="images/profile-hero.png" class="center-image" width="560" />
     <section id="aboutme">
         <h2>About Me</h2>
-        <span><img src="images/profile-pic-sqaure.png" width="200" />My name is Micheal and I live in Port Angeles,
-            Washington but I am originally from southern California. Thats my dog Lulu in the pic! When
-            I moved up here I was amazed at how long the night felt in winter and how long the days felt in the summer.
-            To my surprise the actual difference in the change of day length between Washington and California isn't all
-            that different. See below... </span>
-        <table border="1" cellpadding="10">
-            <h3>Port Angeles, Washington</h3>
-            <thead>
-                <tr>
-                    <th>
-                        Event
-                    </th>
-                    <th>
-                        Date (local)
-                    </th>
-                    <th>
-                        Day length
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        Spring Equinox
-                    </td>
-                    <td>
-                        Mar 20, 2025
-                    </td>
-                    <td>
-                        <strong>12:11:28</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Summer Solstice
-                    </td>
-                    <td>
-                        Jun 21, 2025
-                    </td>
-                    <td>
-                        <strong>16:03:50</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fall Equinox
-                    </td>
-                    <td>
-                        Sep 22, 2025
-                    </td>
-                    <td>
-                        <strong>12:09:30</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Winter Solstice
-                    </td>
-                    <td>
-                        Dec 21, 2025
-                    </td>
-                    <td>
-                        <strong>08:21:13</strong>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table border="1" cellpadding="10">
-            <h3>Los Angeles, California</h3>
-            <thead>
-                <tr>
-                    <th>
-                        Event
-                    </th>
-                    <th>
-                        Date (local)
-                    </th>
-                    <th>
-                        Day length
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        Spring Equinox
-                    </td>
-                    <td>
-                        Mar 20, 2025
-                    </td>
-                    <td>
-                        <strong>12:08:51</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Summer Solstice
-                    </td>
-                    <td>
-                        Jun 21, 2025
-                    </td>
-                    <td>
-                        <strong>14:25:32</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Fall Equinox
-                    </td>
-                    <td>
-                        Sep 22, 2025
-                    </td>
-                    <td>
-                        <strong>12:07:42</strong>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Winter Solstice
-                    </td>
-                    <td>
-                        Dec 21, 2025
-                    </td>
-                    <td>
-                        <strong>09:53:04</strong>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="about-me-block">
+            <img src="images/profile-pic-sqaure.png" width="200" />
+            <p>My name is Micheal and I live in Port Angeles,
+                Washington but I am originally from southern California. Thats my dog Lulu in the pic! When
+                I moved up here I was amazed at how long the night felt in winter and how long the days felt in the
+                summer.
+                To my surprise the actual difference in the change of day length between Washington and California isn't
+                all
+                that different. See below...</p>
+        </div>
+        <div class="table-row">
+            <div class="table-1">
+                <table border="1" cellpadding="10">
+                    <h3>Port Angeles, Washington</h3>
+                    <thead>
+                        <tr>
+                            <th>
+                                Event
+                            </th>
+                            <th>
+                                Date (local)
+                            </th>
+                            <th>
+                                Day length
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Spring Equinox
+                            </td>
+                            <td>
+                                Mar 20, 2025
+                            </td>
+                            <td>
+                                <strong>12:11:28</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Summer Solstice
+                            </td>
+                            <td>
+                                Jun 21, 2025
+                            </td>
+                            <td>
+                                <strong>16:03:50</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fall Equinox
+                            </td>
+                            <td>
+                                Sep 22, 2025
+                            </td>
+                            <td>
+                                <strong>12:09:30</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Winter Solstice
+                            </td>
+                            <td>
+                                Dec 21, 2025
+                            </td>
+                            <td>
+                                <strong>08:21:13</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-2">
+                <table border="1" cellpadding="10">
+                    <h3>Los Angeles, California</h3>
+                    <thead>
+                        <tr>
+                            <th>
+                                Event
+                            </th>
+                            <th>
+                                Date (local)
+                            </th>
+                            <th>
+                                Day length
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Spring Equinox
+                            </td>
+                            <td>
+                                Mar 20, 2025
+                            </td>
+                            <td>
+                                <strong>12:08:51</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Summer Solstice
+                            </td>
+                            <td>
+                                Jun 21, 2025
+                            </td>
+                            <td>
+                                <strong>14:25:32</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fall Equinox
+                            </td>
+                            <td>
+                                Sep 22, 2025
+                            </td>
+                            <td>
+                                <strong>12:07:42</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Winter Solstice
+                            </td>
+                            <td>
+                                Dec 21, 2025
+                            </td>
+                            <td>
+                                <strong>09:53:04</strong>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
     <hr>
     <section id="codingjourney">
         <h2>My Coding Jouney</h2>
-        <img src="images/profile-coding-journey-1.png" width="560" />
+        <img src="images/profile-coding-journey-1.png" width="560" class="center-image" />
         <p>Currently, I am between jobs but I am using this time as an opportunity to learn to code! My objective (or my
             "why") in joining this bootcamp is to be able to change careers, secure a remote position, and enjoy my days
             of coding and being outdoors. My ideal dream job would be creating/managing websites or developing parts of
             websites for larger companies. I have really been enjoying the technical and problem solving of my coding
             journey so far.</p>
-        <span>
-            <img src="images/profile-coding-journey-2.png" width="200"> Prior to this course I have worked through some
-            <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a>/<a
-                href="https://www.codecademy.com/" target="_blank">Codecademy</a> HTMT, CSS, and JavaScript courses and
-            used chatGPT to help me figure out how to push code to GitHub and use their <a
-                href="https://docs.github.com/en/pages" target="_blank">pages feature</a> to host my first coding
-            experiments. Additionally, I took an
-            intro to <a href="https://codemify.com/" target="_blank">QA automation course</a> which introduced me to
-            some really cool software (<a href="https://www.cypress.io/" target="_blank">cypress</a>) and was a great
-            crashcourse into javascript and the CLI.
-        </span>
+        <div class="coding-jouney-block">
+            <img src="images/profile-coding-journey-2.png" width="200">
+            <p>Prior to this course I have worked through some
+                <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a>/<a
+                    href="https://www.codecademy.com/" target="_blank">Codecademy</a> HTMT, CSS, and JavaScript courses
+                and
+                used chatGPT to help me figure out how to push code to GitHub and use their <a
+                    href="https://docs.github.com/en/pages" target="_blank">pages feature</a> to host my first coding
+                experiments. Additionally, I took an
+                intro to <a href="https://codemify.com/" target="_blank">QA automation course</a> which introduced me to
+                some really cool software (<a href="https://www.cypress.io/" target="_blank">cypress</a>) and was a
+                great
+                crashcourse into javascript and the CLI.
+            </p>
+        </div>
         <h3>Free Resources:</h3>
         <ul>
             <li><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a></li>
@@ -187,7 +205,7 @@
     <hr>
     <section id="mytime">
         <h2>How I Spend My Non-Coding & Working Time</h2>
-        <img src="images/profile-images-camp-lu.png" width="560" />
+        <img src="images/profile-images-camp-lu.png" class="center-image" width="560" />
         <p>I like to spend a lot of time outdoors. It is a huge reason why I moved to Washington. Additionally, I have a
             dog who's happiest outside, running around all day. It's a win-win situation. My favorite outdoor activities
             are:
@@ -198,12 +216,15 @@
             <li>Backpacking</li>
             <li>SUPs</li>
             <li>Hangin out in my van down by the river</li>
-            <audio src="mp3s/river-audio-clip-profile page.mp3" controls>Your browser does not support HTML5 audio. Here is <a href="mp3s/river-audio-clip-profile page.mp3">link to the
-                audio</a> instead.</audio>
+            <audio src="mp3s/river-audio-clip-profile page.mp3" controls>Your browser does not support HTML5 audio. Here
+                is <a href="mp3s/river-audio-clip-profile page.mp3">link to the
+                    audio</a> instead.</audio>
         </ul>
         <p>My absolute favorite way to spend my time not working is camping by a lake or river and watching my dog do
             this all day (see video below)</p>
-        <video src="videos/my-profile-lu-swimming.mov" controls width="560">Your broweser does not support HTML5 video. Here is <a href="videos/my-profile-lu-swimming.mov">link to the
+        <video src="videos/my-profile-lu-swimming.mov" class="center-image" controls width="560">Your broweser does not
+            support HTML5 video.
+            Here is <a href="videos/my-profile-lu-swimming.mov">link to the
                 video</a> instead.</video>
     </section>
     <hr>

@@ -1,0 +1,71 @@
+
+       * {
+        background-color: rgb(235, 243, 223);
+       }
+       
+       h1 {
+            text-align: center;
+        }
+
+        .survey-form {
+            width: 80%;
+            margin: auto;
+        }
+
+        .hero {
+            background-color: orange;
+            width: 80%;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .hero img {
+            border-radius: 12px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #submit-btn {
+            background: green; 
+            color: white;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        footer {
+            width: 80%;
+            margin: auto;
+            padding-top: 20px;
+        }
+        
+        nav {
+            width: 80%;
+            margin-left: auto; 
+            margin-right: auto;
+            color: white;
+            background-color: rgb(32, 100, 146);
+            border-radius: 9999px 9999px 0 0;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+
+        nav a {
+            padding-left: 20px;
+            color: azure;
+            background-color: rgb(32, 100, 146);
+            margin-left: 20px;
+        
+        }
+
+        .under-hero {
+            width: 80%;
+            margin-left: auto; 
+            margin-right: auto;
+            color: white;
+            background-color: rgb(32, 100, 146);
+            border-radius: 0 0 9999px 9999px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
