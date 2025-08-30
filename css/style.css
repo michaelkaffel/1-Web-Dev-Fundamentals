@@ -33,7 +33,7 @@ header {
     height: 35px;
     width: 100%;
     border-bottom: black solid 3px;
-    background-image: url(/images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
+    background-image: url(../images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
     background-size: auto auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -57,7 +57,7 @@ nav {
 /* Footer section */
 
 footer {
-    background-image: url(/images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
+    background-image: url(../images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
     background-size: auto auto;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -84,7 +84,7 @@ footer img {
 /* Hero section */
 
 .hero {
-    background-image: url(/images/web-dev-course-hero.png);
+    background-image: url(../images/web-dev-course-hero.png);
     background-size: auto auto;
     background-repeat: no-repeat;
     background-position: center;
