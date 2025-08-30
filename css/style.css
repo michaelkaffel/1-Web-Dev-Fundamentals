@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 
 * {
-    border: red solid 1px !important;
+    /* border: red solid 1px !important; */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -85,17 +85,17 @@ footer img {
 
 .hero {
     background-image: url(../images/web-dev-course-hero.png);
-    background-size: auto auto;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
+    background-position: center top;
+    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: black solid 3px;
     /* CHAT GPT CHANGES FOR MOBILE */
-    /* min-height: 70vh;
-    padding: 64px 0 24px; */
+    min-height: 100vh;
+    padding: 64px 0 24px;
 }
 
 .hero-textbox {
@@ -106,7 +106,7 @@ footer img {
     border-radius: 12px;
     border: black solid 3px;
     color: #FDF2CD;
-    margin-top: -300px;
+    /* margin-top: -300px; */
     display: flex;
     align-items: stretch;
 }
@@ -144,7 +144,7 @@ footer img {
 
 .projects {
     background-color: #ACAF3C;
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     display: flex;
     align-items: center;
@@ -159,7 +159,9 @@ footer img {
     border: solid black 3px;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;   
 }
 
 .projects-container-title-box {
@@ -224,7 +226,7 @@ h4.project-card-title {
 
 .assignments {
     background-color: #ACAF3C;
-    width: 100vw;
+    width: 100%;
     /* height: 100vh; */
     display: flex;
     align-items: center;
@@ -239,6 +241,8 @@ h4.project-card-title {
     border-radius: 12px;
     border: solid black 3px;
     padding-bottom: 30px;
+    width: 90%;
+    max-width: 1000px;
 
     /* display: flex;
     align-content: center;    */
@@ -298,3 +302,33 @@ h4.assignments-card-title {
     border: solid black 1px;
     margin-bottom: 20px;
 }
+
+@media (max-width: 600px) {
+  .hero-textbox {
+    width: 90%;
+    min-height: auto;
+  }
+
+  .hero-text h1, .hero-text h2 {
+    font-size: 1.3em;
+  }
+
+  .index-hero-h3-width h3 {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .assignments-card {
+    width: 90%;         /* Smaller than parent */
+    margin: 0 auto 20px; /* Centered and spaced */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
