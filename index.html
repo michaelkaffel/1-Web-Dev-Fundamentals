@@ -1,32 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Kumbh+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
     <title>Web Dev Fundamentals for Nucamp</title>
 </head>
+
 <body>
-    <h1><a href="index.html"><img src="images/mk-logo.svg" width="20" /></a> Web Dev Fundamentals for Nucamp - Projects and Assignments</h1>
-    <!--<nav><a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a></nav> -->
-    <img src="images/web-dev-course-hero.png" width="560" alt="a cartoon drawing of a walking and smiling computer moving down a path with signs for showing logos for HTML5, JS, and React" />
-    <section id="intro">
-        <p>This page serves as the central hub and access point for my projects and assignments in the <a href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals target="_blank">Nucamp Website Development Fundamentals Course</a>.</p>
+
+    <!-- HEADER/NAV SECTION -->
+
+    <header>
+        <div class="upper-logo">
+            <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+        </div>
+        <nav><a href="index.html">Home</a></nav>
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+        <div class="hero-textbox">
+            <div class="hero-text">
+                <h1>WEB DEVELOPMENT FUNDAMENTALS</h1>
+                <h2>PROJECTS & ASSIGNMENTS</h2>
+                <div class="index-hero-h3-width">
+                    <h3>The central hub and access point for my projects and assignments in the
+                        <a href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals target=_blank">
+                            Nucamp Website Development Fundamentals Course</a>.
+
+                    </h3>
+                </div>
+            </div>
+        </div>
+        </div>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <p><em>No projects yet but they are coming soon!</em></p>
+
+    <!-- PROJECTS SECTION -->
+
+    <section class="projects">
+        <div class="projects-container">
+            <div class="projects-container-title-box">
+                <h2>PROJECTS SECTION</h2>
+                <h3>No projects yet but they are coming soon!</h3>
+            </div>
+            <!-- <div class="project-card-container">
+                <div class="project-card-row">
+                    <div class="project-card">
+                        <h4 class="project-card-title">Project #</h4>
+                            <div class="project-card-image"><a href=""><img src="images/projects-sample-image.png"></a></div>
+                        <h5>Description & link</h5>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-card-title">Project #</h4>
+                           <div class="project-card-image"><a href=""><img src="images/projects-sample-image.png"></a></div>
+                        <h5>Description & link</h5>
+                    </div>
+                    <div class="project-card">
+                        <h4 class="project-card-title">Project #</h4>
+                            <div class="project-card-image"><a href=""><img src="images/projects-sample-image.png"></a></div>
+                        <h5>Description & link</h5>
+                    </div>
+                </div>
+            </div> -->
+        </div>
     </section>
-    <section is="assignments">
-        <h2>Assignments</h2>
-        <ol>
-            <li>The obligatory <em><a href="helloWorld.html">Hello World</a></em> assignment</li>
-            <li><a href="vs-code-ext-assignment.html">VS Code Extension</a> assignment</li>
-            <li>My first <a href="surveyForm.html">Survey Form</a> assignment</li>
-            <li><a href="jas-cro-fan-page.html">Jasmine Crockett Fanpage</a> assignment</li>
-            <li><a href="profile.html">My Profile Page</a> assignment</li>
-        </ol>
+
+    <!-- ASSIGNMENT SECTION -->
+
+    <section class="assignments">
+        <div class="assignments-container">
+            <div class="assignments-container-title-box">
+                <h2>ASSIGNMENTS SECTION</h2>
+            </div>
+            <div class="assignments-card-row">
+                <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 1</h4>
+                    <div class="assignments-card-image"><a href="helloWorld.html"><img
+                                src="images/projects-sample-image.png"></a></div>
+                    <h5>The obligatory <a href="helloWorld.html">Hello World</a> assignment.</h5>
+                </div>
+                <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 2</h4>
+                    <div class="assignments-card-image"><a href="vs-code-ext-assignment.html"><img
+                                src="images/vs-code-assignment-screenshot.png"></a></div>
+                    <h5>The <a href="vs-code-ext-assignment.html">VS Code Extension</a> assignment.</h5>
+                </div>
+                <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 3</h4>
+                    <div class="assignments-card-image"><a href="surveyForm.html"><img
+                                src="images/first-survey-assign-screenshot.png"></a></div>
+                    <h5>My first <a href="surveyForm.html">Survey Form</a> assignment.</h5>
+                </div>
+            </div>
+            <div class="assignments-card-row">
+                <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 4</h4>
+                    <div class="assignments-card-image"><a href="jas-cro-fan-page.html"><img
+                                src="images/fan-page-screenshot.png"></a></div>
+                    <h5>The "<a href="jas-cro-fan-page.html">Fan Page</a>"" assignment.</h5>
+                </div>
+                <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 5</h4>
+                    <div class="assignments-card-image"><a href="profile.html"><img
+                                src="images/my-profile-screenshot.png"></a></div>
+                    <h5>My first <a href="profile.html">Profile Page</a> assignment.</h5>
+                </div>
+                <!-- <div class="assignments-card">
+                    <h4 class="assignments-card-title">Assignment 3</h4>
+                    <div class="assignments-card-image"><a href="jsurveyForm.html"><img src="images/first-survey-assign-screenshot.png"></a></div>
+                    <h5>My first <a href="surveyForm.html">Survey Form</a> assignment.</h5>
+                </div> -->
+            </div>
+        </div>
     </section>
+
+    <!-- FOOTER SECTION -->
+
     <footer>
-        <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a> | © 2025 Michael Kaffel | <a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a>
+        <p class="footer-nav">| © 2025 Michael Kaffel | <a href="index.html">Home</a> | <a
+                href="https://github.com/michaelkaffel" target="_blank">My GitHub</a></p>
+        <div class="footer-image">
+            <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a>
+        </div>
     </footer>
 </body>
+
 </html>
