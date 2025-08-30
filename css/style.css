@@ -1,7 +1,7 @@
 /* GLOBAL STYLES */
 
 * {
-    /* border: red solid 1px !important; */
+    border: red solid 1px !important;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -93,6 +93,9 @@ footer img {
     justify-content: center;
     align-items: center;
     border-bottom: black solid 3px;
+    /* CHAT GPT CHANGES FOR MOBILE */
+    /* min-height: 70vh;
+    padding: 64px 0 24px; */
 }
 
 .hero-textbox {
