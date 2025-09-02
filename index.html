@@ -4,46 +4,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Kumbh+Sans:wght@100..900&display=swap"
         rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="stylesheet" href="css/styles-with-bootstrap.css">
+
     <title>Web Dev Fundamentals for Nucamp</title>
 </head>
 
 <body>
 
-    <!-- HEADER/NAV SECTION -->
+    <!-- HEADER SECTION -->
 
-    <header>
+    <!-- <header>
         <div class="upper-logo">
             <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
         </div>
-        <nav><a href="index.html">Home</a></nav>
-    </header>
+
+    </header> -->
+
+    <!-- NAV BAR-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" style="background-color: #2383c7;"
+        data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/mk-logo.svg" alt="MK logo" width="20px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Assignments
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="helloWorld.html">Hello World</a></li>
+                            <li><a class="dropdown-item" href="vs-code-ext-assignment.html">VS Code Extension</a></li>
+                            <li><a class="dropdown-item" href="surveyForm.html">My First Survey</a></li>
+                            <li><a class="dropdown-item" href="jas-cro-fan-page.html">Fan Page</a></li>
+                            <li><a class="dropdown-item" href="profile.html">My First Profile</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <!-- HERO SECTION -->
 
-    <section class="hero">
-        <div class="hero-textbox">
-            <div class="hero-text">
-                <h1>WEB DEVELOPMENT FUNDAMENTALS</h1>
-                <h2>PROJECTS & ASSIGNMENTS</h2>
-                <div class="index-hero-h3-width">
-                    <h3>The central hub and access point for my projects and assignments in the<a href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals" target="_blank"> Nucamp Website Development Fundamentals Course</a>.</h3>
+
+    <div class="hero-img">
+        <section class="container text-center">
+            <div class="row">
+                <div class="col-10 offset-1 hero-image-textbox">
+                    <h1>WEB DEVELOPMENT FUNDAMENTALS</h1>
+                    <h2>PROJECTS & ASSIGNMENTS</h2>
+                    <div class="index-hero-h3-width">
+                        <h3>The central hub and access point for my projects and assignments in the<a
+                                href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals"
+                                target="_blank">
+                                Nucamp Website Development Fundamentals Course</a>.</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- PROJECTS SECTION -->
 
-    <section class="projects">
-        <div class="projects-container">
-            <div class="projects-container-title-box">
-                <h2>PROJECTS SECTION</h2>
-                <h3>No projects yet but they are coming soon!</h3>
+
+    <section class="container text-center">
+        <div class="row">
+            <div class="col-10 offset-1 yellow-background">
+                <div class="col-md-6 offset-md-3 projects-textbox">
+                    <h2>PROJECTS SECTION</h2>
+                    <h3>No projects yet but they are coming soon!</h3>
+                </div>
             </div>
             <!-- <div class="project-card-container">
                 <div class="project-card-row">
@@ -68,63 +125,103 @@
     </section>
 
     <!-- ASSIGNMENT SECTION -->
+    <div class="green-background">
+        <section class="container text-center">
+            <div class="row">
+                <div class="yellow-background col-10 offset-1">
+                    <div class="col-md-6 offset-md-3 ">
+                        <h2 class="assignments-textbox">ASSIGNMENTS SECTION</h2>
+                    </div>
+                    <div class="col-md-6 offset-md-3 margin-bottom">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <a href="helloWorld.html"><img src="images/projects-sample-image.png"
+                                            class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Assignment 1</h5>
+                                        <p>The obligatory <a href="helloWorld.html">Hello World</a> assignment.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="vs-code-ext-assignment.html"><img
+                                            src="images/vs-code-assignment-screenshot.png" class="d-block w-100"
+                                            alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Assignment 2</h5>
+                                        <p>The <a href="vs-code-ext-assignment.html">VS Code Extension</a> assignment.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="surveyForm.html"><img src="images/first-survey-assign-screenshot.png"
+                                            class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Assignment 3</h5>
+                                        <p>My first <a href="surveyForm.html">Survey Form</a> assignment.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="jas-cro-fan-page.html"><img src="images/fan-page-screenshot.png"
+                                            class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Assignment 4</h5>
+                                        <p>The "<a href="jas-cro-fan-page.html">Fan Page</a>"" assignment.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <a href="profile.html"><img src="images/my-profile-screenshot.png"
+                                            class="d-block w-100" alt="..."></a>
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Assignment 5</h5>
+                                        <p>My first <a href="profile.html">Profile Page</a> assignment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
 
-    <section class="assignments">
-        <div class="assignments-container">
-            <div class="assignments-container-title-box">
-                <h2>ASSIGNMENTS SECTION</h2>
-            </div>
-            <div class="assignments-card-row">
-                <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 1</h4>
-                    <div class="assignments-card-image"><a href="helloWorld.html"><img
-                                src="images/projects-sample-image.png"></a></div>
-                    <h5>The obligatory <a href="helloWorld.html">Hello World</a> assignment.</h5>
-                </div>
-                <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 2</h4>
-                    <div class="assignments-card-image"><a href="vs-code-ext-assignment.html"><img
-                                src="images/vs-code-assignment-screenshot.png"></a></div>
-                    <h5>The <a href="vs-code-ext-assignment.html">VS Code Extension</a> assignment.</h5>
-                </div>
-                <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 3</h4>
-                    <div class="assignments-card-image"><a href="surveyForm.html"><img
-                                src="images/first-survey-assign-screenshot.png"></a></div>
-                    <h5>My first <a href="surveyForm.html">Survey Form</a> assignment.</h5>
                 </div>
             </div>
-            <div class="assignments-card-row">
-                <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 4</h4>
-                    <div class="assignments-card-image"><a href="jas-cro-fan-page.html"><img
-                                src="images/fan-page-screenshot.png"></a></div>
-                    <h5>The "<a href="jas-cro-fan-page.html">Fan Page</a>"" assignment.</h5>
-                </div>
-                <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 5</h4>
-                    <div class="assignments-card-image"><a href="profile.html"><img
-                                src="images/my-profile-screenshot.png"></a></div>
-                    <h5>My first <a href="profile.html">Profile Page</a> assignment.</h5>
-                </div>
-                <!-- <div class="assignments-card">
-                    <h4 class="assignments-card-title">Assignment 3</h4>
-                    <div class="assignments-card-image"><a href="jsurveyForm.html"><img src="images/first-survey-assign-screenshot.png"></a></div>
-                    <h5>My first <a href="surveyForm.html">Survey Form</a> assignment.</h5>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </div>
     <!-- FOOTER SECTION -->
-
-    <footer>
-        <p class="footer-nav">| © 2025 Michael Kaffel | <a href="index.html">Home</a> | <a
-                href="https://github.com/michaelkaffel" target="_blank">My GitHub</a></p>
-        <div class="footer-image">
-            <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a>
-        </div>
-    </footer>
+    <!-- replace "home" link with a "back to top" anchor -->
+    <div class="footer-image">
+        <footer class="container">
+            <div class="row">
+                <div class="col offset-1 offset-md-7">
+                <p>© 2025 Michael Kaffel | <a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel"
+                        target="_blank">My GitHub</a> | <a href="index.html"><img src="images/mk-logo.svg"
+                            width="15" /></a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
