@@ -1,25 +1,47 @@
-
+/* GLOBAL STYLING */
 
 body {
     font-family: "Kumbh Sans", "Asimovian";
     background-color: #ACAF3C;
 }
 
+/* NAVBAR */
+
 nav {
     background-image: url(../images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
     background-position: bottom;
+    border-top: black solid 3px;
     border-bottom: black solid 3px;
 }
 
-.navbar {
-    background-color: #f78c20 !important;
-    color: white;
+.footer-image {
+    background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
+    background-position: bottom;
+    border-top: black solid 3px;
+    border-bottom: black solid 3px;
 }
 
-.footer-image {
-    background-image: url(../images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
-    background-position: bottom;
+.footer-image p {
+    padding-top: 10px;
 }
+
+.nav-dropdown-background {
+    background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
+    background-position: top;
+    border: black solid 3px;
+}
+
+.footer-full-width {
+    width: 100vw;
+}
+
+/* HERO */
+
+a.hero-link {
+    color: #E1AF53;
+}
+
+/* INDEX */
 
 
 .hero-img {
@@ -51,8 +73,8 @@ nav {
 }
 
 .projects-textbox,
-.assignments-textbox
- {
+.assignments-textbox,
+.hello-world-textbox {
     background-color: #63AAB8;
     border-radius: 12px;
     border: solid black 3px;
@@ -87,4 +109,25 @@ h3 {
     border-radius: 12px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/* HELLO WORLD */
+
+h2.hello-world {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.hello-world {
+    border-radius: 25px;
+    border: black solid 3px;
+}
+
+/* VS CODE EXTENSION */
+
+.vs-code-hero-img {
+    background-image: url(../images/vs-code-hero-background.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
 }

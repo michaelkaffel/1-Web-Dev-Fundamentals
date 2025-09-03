@@ -8,6 +8,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Kumbh+Sans:wght@100..900&display=swap"
@@ -32,8 +36,7 @@
     </header> -->
 
     <!-- NAV BAR-->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" style="background-color: #2383c7;"
-        data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="images/mk-logo.svg" alt="MK logo" width="20px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -44,17 +47,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i> Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file fa-lg" style="color: #1C3424;"></i> Projects</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Assignments
+                            <i class="fa-solid fa-list-check fa-lg" style="color: #1C3424;"></i> Assignments
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu nav-dropdown-background">
                             <li><a class="dropdown-item" href="helloWorld.html">Hello World</a></li>
                             <li><a class="dropdown-item" href="vs-code-ext-assignment.html">VS Code Extension</a></li>
                             <li><a class="dropdown-item" href="surveyForm.html">My First Survey</a></li>
@@ -62,9 +65,9 @@
                             <li><a class="dropdown-item" href="profile.html">My First Profile</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </div>
@@ -82,7 +85,7 @@
                     <h2>PROJECTS & ASSIGNMENTS</h2>
                     <div class="index-hero-h3-width">
                         <h3>The central hub and access point for my projects and assignments in the<a
-                                href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals"
+                                class="hero-link" href="https://www.nucamp.co/bootcamp-overview/web-development-fundamentals"
                                 target="_blank">
                                 Nucamp Website Development Fundamentals Course</a>.</h3>
                     </div>
@@ -210,13 +213,15 @@
     <!-- FOOTER SECTION -->
     <!-- replace "home" link with a "back to top" anchor -->
     <div class="footer-image">
-        <footer class="container">
+        <footer class="container text-end">
             <div class="row">
-                <div class="col offset-1 offset-md-7">
-                <p>© 2025 Michael Kaffel | <a href="index.html">Home</a> | <a href="https://github.com/michaelkaffel"
-                        target="_blank">My GitHub</a> | <a href="index.html"><img src="images/mk-logo.svg"
-                            width="15" /></a></p>
-            </div>
+                <div class="col">
+                    <p><i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i> 2025 Michael Kaffel | <a href="index.html"><i class="fa-solid fa-house fa-lg"
+                                style="color: #1C3424;"></i></a> | <a
+                            href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg" style="color: #1C3424;"></i></a> | <a
+                            href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
+                    </p>
+                </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
