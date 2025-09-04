@@ -26,7 +26,7 @@
 <body>
 
     <!-- NAV BAR-->
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="light">
+    <nav class="nav-background navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html"><img src="images/mk-logo.svg" alt="MK logo" width="20px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,7 +49,7 @@
                             aria-expanded="false">
                             <i class="fa-solid fa-list-check fa-lg" style="color: #1C3424;"></i> Assignments
                         </a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu nav-dropdown-background">
                             <li><a class="dropdown-item" href="helloWorld.html">Hello World</a></li>
                             <li><a class="dropdown-item active" href="#">VS Code Extension</a></li>
                             <li><a class="dropdown-item" href="surveyForm.html">My First Survey</a></li>
@@ -61,6 +61,7 @@
             </div>
         </div>
     </nav>
+    
 
     <!-- MAIN -->
     <main>
@@ -86,13 +87,67 @@
         <!-- GUIDE'S SECTION -->
         <section class="container text-center">
             <div class="row">
-                <div class="yellow-background col-10 offset-1">
+                <div class="guide-section-padding yellow-background col-10 offset-1 guides-placement">
                     <div class="col-md-6 offset-md-3 ">
                         <h2 class="assignments-textbox">INSTALLATION GUIDES</h2>
                     </div>
-
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
+                        <div class="col">
+                            <div class="card border-secondary mb-3">
+                                <div class="card-header">
+                                    LIVE SERVER
+                                </div>
+                                <a href="install-extension.html"><img src="/images/live-server-ext.png"
+                                        class="card-img-top" alt="Live Server Extension"></a>
+                                <div class="card-body">
+                                    <div class="card-background">
+                                        <h5 class="card-title">The Live Server Extension</h5>
+                                        <p class="card-text">This installation guide covers the installation and general
+                                            use
+                                            of the VS Code Liver Server extension.</p>
+                                    </div>
+                                    <a href="install-extension.html" class="btn btn-primary custom-btn-color">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-secondary mb-3">
+                                <div class="card-header">
+                                    COPILOT
+                                </div>
+                                <a href="install-github-copilot-extension.html"><img
+                                        src="/images/github-copilot-ext.png" class="card-img-top"
+                                        alt="GitHub Copilot"></a>
+                                <div class="card-body">
+                                    <div class="card-background">
+                                        <h5 class="card-title">GitHub Copilot Extension</h5>
+                                        <p class="card-text">The installation guide covers the installation and general
+                                            usage of the GitHub Copilot extension.</p>
+                                    </div>
+                                    <a href="install-github-copilot-extension.html" class="btn custom-btn-color btn-primary">READ
+                                        MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card border-secondary mb-3">
+                                <div class="card-header">
+                                    HTML PREVIEW
+                                </div>
+                                <a href="install-html-preview.html"><img src="/images/live-preview-ext.png"
+                                        class="card-img-top" alt="Live Preview Extension"></a>
+                                <div class="card-body">
+                                    <div class="card-background">
+                                        <h5 class="card-title">HTML Preview Extension</h5>
+                                        <p class="card-text">The installation guide covers the installation and general
+                                            usage of the HTML Preview extension.</p>
+                                    </div>
+                                    <a href="install-html-preview.html" class="btn custom-btn-color btn-primary">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
     </main>
 
@@ -107,7 +162,7 @@
 
 
     <!-- FOOTER SECTION -->
-   
+
     <div class="position-fixed bottom-0 footer-full-width">
         <div class="footer-image">
             <footer class="container text-end">
@@ -124,9 +179,9 @@
         </div>
     </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 /* GLOBAL STYLING */
 
+
 body {
     font-family: "Kumbh Sans", "Asimovian";
     background-color: #ACAF3C;
@@ -7,8 +8,8 @@ body {
 
 /* NAVBAR */
 
-nav {
-    background-image: url(../images/Screenshot\ 2025-08-29\ at\ 17.12.23.png);
+.nav-background {
+    background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
     background-position: bottom;
     border-top: black solid 3px;
     border-bottom: black solid 3px;
@@ -74,7 +75,8 @@ a.hero-link {
 
 .projects-textbox,
 .assignments-textbox,
-.hello-world-textbox {
+.hello-world-textbox,
+.live-server-textbox {
     background-color: #63AAB8;
     border-radius: 12px;
     border: solid black 3px;
@@ -123,6 +125,19 @@ img.hello-world {
     border: black solid 3px;
 }
 
+.hello-world-hero-img {
+    background-image: url(../images/hello-world-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
+.hello-world-bottom-margin {
+    margin-bottom: 100px;
+}
+
+
+
 /* VS CODE EXTENSION */
 
 .vs-code-hero-img {
@@ -131,3 +146,50 @@ img.hello-world {
     background-position: center;
     border-bottom: black solid 3px;
 }
+
+.card-body {
+     background-color: #FDF2CD;
+     border-bottom-left-radius: 7px;
+     border-bottom-right-radius: 7px;
+     border-top: solid black 1px;
+}
+
+.card-header {
+   background-color: #63AAB8; 
+}
+
+.card-header {
+    color: #FDF2CD;
+    font-size: 1.7em;
+}
+
+.card-background {
+    margin-bottom: 15px;
+}
+
+.guides-placement {
+    margin-bottom: 100px;
+}
+
+.custom-btn-color {
+    background-color: #63AAB8;
+}
+
+/* VS CODE LIVE SERVER EXT */
+
+.live-server-hero-img {
+    background-image: url(../images/live-server-ext-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
+/* GITHUB COPILOT EXT */
+
+.git-hub-ext-hero-img {
+    background-image: url(../images/github-copilot-ext-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
