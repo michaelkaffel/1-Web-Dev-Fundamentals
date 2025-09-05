@@ -2,261 +2,529 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asimovian&family=Kumbh+Sans:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+    <link rel="stylesheet" href="css/styles-with-bootstrap.css">
+
     <title>My Profile Page</title>
-    <link rel="stylesheet" href="css/profile-styles.css" />
+
 </head>
 
 <body>
-    <div class="header-element">
-        <a href="index.html"><img src="images/mk-logo.svg" width="20" /></a>
-       <h1>My Profile Page</h1>
-    </div>
-    <nav>
-        <a href="index.html">Home</a>
-        <br>
-        <a href="#aboutme">About Me</a> | <a href="#codingjourney">My Coding Journey</a> | <a href="#mytime">How I
-                Spend My Time</a> | <a href="#tellmeaboutyou">Tell Me About Yourself</a>
+
+    <!-- NAV BAR-->
+    <nav class="nav-background navbar navbar-expand-lg sticky-top bg-body-tertiary" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/mk-logo.svg" alt="MK logo" width="20px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house fa-lg"
+                                style="color: #1C3424;"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-file fa-lg" style="color: #1C3424;"></i>
+                            Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-list-check fa-lg" style="color: #1C3424;"></i> Assignments
+                        </a>
+                        <ul class="dropdown-menu nav-dropdown-background">
+                            <li><a class="dropdown-item" href="helloWorld.html">Hello World</a></li>
+                            <li><a class="dropdown-item active" href="#">VS Code Extension</a></li>
+                            <li><a class="dropdown-item" href="surveyForm.html">My First Survey</a></li>
+                            <li><a class="dropdown-item" href="jas-cro-fan-page.html">Fan Page</a></li>
+                            <li><a class="dropdown-item" href="profile.html">My First Profile</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <hr>
-    <img src="images/profile-hero.png" class="center-image" width="560" />
-    <section id="aboutme">
-        <h2>About Me</h2>
-        <div class="about-me-block">
-            <img src="images/profile-pic-sqaure.png" width="200" />
-            <p>My name is Micheal and I live in Port Angeles,
-                Washington but I am originally from southern California. Thats my dog Lulu in the pic! When
-                I moved up here I was amazed at how long the night felt in winter and how long the days felt in the
-                summer.
-                To my surprise the actual difference in the change of day length between Washington and California isn't
-                all
-                that different. See below...</p>
-        </div>
-        <div class="table-row">
-            <div class="table-1">
-                <table border="1" cellpadding="10">
-                    <h3>Port Angeles, Washington</h3>
-                    <thead>
-                        <tr>
-                            <th>
-                                Event
-                            </th>
-                            <th>
-                                Date (local)
-                            </th>
-                            <th>
-                                Day length
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Spring Equinox
-                            </td>
-                            <td>
-                                Mar 20, 2025
-                            </td>
-                            <td>
-                                <strong>12:11:28</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Summer Solstice
-                            </td>
-                            <td>
-                                Jun 21, 2025
-                            </td>
-                            <td>
-                                <strong>16:03:50</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Fall Equinox
-                            </td>
-                            <td>
-                                Sep 22, 2025
-                            </td>
-                            <td>
-                                <strong>12:09:30</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Winter Solstice
-                            </td>
-                            <td>
-                                Dec 21, 2025
-                            </td>
-                            <td>
-                                <strong>08:21:13</strong>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="table-2">
-                <table border="1" cellpadding="10">
-                    <h3>Los Angeles, California</h3>
-                    <thead>
-                        <tr>
-                            <th>
-                                Event
-                            </th>
-                            <th>
-                                Date (local)
-                            </th>
-                            <th>
-                                Day length
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                Spring Equinox
-                            </td>
-                            <td>
-                                Mar 20, 2025
-                            </td>
-                            <td>
-                                <strong>12:08:51</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Summer Solstice
-                            </td>
-                            <td>
-                                Jun 21, 2025
-                            </td>
-                            <td>
-                                <strong>14:25:32</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Fall Equinox
-                            </td>
-                            <td>
-                                Sep 22, 2025
-                            </td>
-                            <td>
-                                <strong>12:07:42</strong>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Winter Solstice
-                            </td>
-                            <td>
-                                Dec 21, 2025
-                            </td>
-                            <td>
-                                <strong>09:53:04</strong>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+
+    <!-- HERO -->
+    <section class="profile-hero-img">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-6 mx-auto hero-image-textbox">
+                    <h1>MY PROFILE PAGE</h1>
+                </div>
             </div>
         </div>
     </section>
-    <hr>
-    <section id="codingjourney">
-        <h2>My Coding Jouney</h2>
-        <img src="images/profile-coding-journey-1.png" width="560" class="center-image" />
-        <p>Currently, I am between jobs but I am using this time as an opportunity to learn to code! My objective (or my
-            "why") in joining this bootcamp is to be able to change careers, secure a remote position, and enjoy my days
-            of coding and being outdoors. My ideal dream job would be creating/managing websites or developing parts of
-            websites for larger companies. I have really been enjoying the technical and problem solving of my coding
-            journey so far.</p>
-        <div class="coding-jouney-block">
-            <img src="images/profile-coding-journey-2.png" width="200">
-            <p>Prior to this course I have worked through some
-                <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a>/<a
-                    href="https://www.codecademy.com/" target="_blank">Codecademy</a> HTMT, CSS, and JavaScript courses
-                and
-                used chatGPT to help me figure out how to push code to GitHub and use their <a
-                    href="https://docs.github.com/en/pages" target="_blank">pages feature</a> to host my first coding
-                experiments. Additionally, I took an
-                intro to <a href="https://codemify.com/" target="_blank">QA automation course</a> which introduced me to
-                some really cool software (<a href="https://www.cypress.io/" target="_blank">cypress</a>) and was a
-                great
-                crashcourse into javascript and the CLI.
-            </p>
-        </div>
-        <h3>Free Resources:</h3>
-        <ul>
-            <li><a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a></li>
-            <li><a href="https://www.codecademy.com/" target="_blank">Codecademy</a></li>
-            <li><a href="https://codemify.com/" target="_blank">QA automation course</a></li>
-        </ul>
 
-        <p>
-            I'm looking forward to this Web Development Fundamentals course and the following Full Stack Web Mobile
-            Development course I'm taking immediately after this one. What I am most looking forward to is seeing it all
-            come together. For example: Making a form in html, styling it in css, and then using an assortment of
-            languages and systems for the back end? I don't know the specifics yet but I am excited to find out!
-        </p>
-    </section>
-    <hr>
-    <section id="mytime">
-        <h2>How I Spend My Non-Coding & Working Time</h2>
-        <img src="images/profile-images-camp-lu.png" class="center-image" width="560" />
-        <p>I like to spend a lot of time outdoors. It is a huge reason why I moved to Washington. Additionally, I have a
-            dog who's happiest outside, running around all day. It's a win-win situation. My favorite outdoor activities
-            are:
-        </p>
-        <ul>
-            <li>Camping</li>
-            <li>Hiking</li>
-            <li>Backpacking</li>
-            <li>SUPs</li>
-            <li>Hangin out in my van down by the river</li>
-            <audio src="mp3s/river-audio-clip-profile page.mp3" controls>Your browser does not support HTML5 audio. Here
-                is <a href="mp3s/river-audio-clip-profile page.mp3">link to the
-                    audio</a> instead.</audio>
-        </ul>
-        <p>My absolute favorite way to spend my time not working is camping by a lake or river and watching my dog do
-            this all day (see video below)</p>
-        <video src="videos/my-profile-lu-swimming.mov" class="center-image" controls width="560">Your broweser does not
-            support HTML5 video.
-            Here is <a href="videos/my-profile-lu-swimming.mov">link to the
-                video</a> instead.</video>
-    </section>
-    <hr>
-    <section id="tellmeaboutyou">
-        <h2>What are your favorite activities?</h2>
-        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
-            target="_blank">
-            <fieldset>
-                <legend>Contact Info</legend>
-                <div>
-                    <label for="firstName">First Name: </label>
-                    <input type="text" id="firstName" name="firstName" placeholder="Your First Name" />
-                    <label for="lastName">Last Name: </label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" />
-                </div>
-                <div>
-                    <label for="email">Your Email: </label>
-                    <input type="email" id="email" name="email" placeholder="Your Email Address" />
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Type of Activities</legend>
-                <div>
-                    <label for="likeOutside">Do you like the outdoors?:</label><br>
-                    <select id="likeOutside" name="likeOutside">
-                        <option value="">Choose and option</option>
-                        <option value="yes">Yes</option>
-                        <option value="sorta">Yes but only to look at</option>
-                        <option value="no">Not really</option>
-                    </select>
+    <!-- <img src="images/profile-hero.png" class="center-image" width="560" /> -->
 
-                    <!--
+    <main class="container">
+        <section class="row" id="aboutme">
+
+            <div class="mt-5 col-10 mx-auto">
+                <div class="card mb-3">
+                    <div class="card-header cust-card-header">
+                        About Me
+                    </div>
+                    <div class="row g-0">
+                        <div class="col-md-4 about-me-card-image-adjs">
+                            <img src="images/profile-pic-sqaure.png" class="img-fluid" alt="...">
+                        </div>
+                        <div class="col-md-8 cust-profile-card-side-pic-background">
+                            <div class="card-body">
+                                <p class="card-text">My name is Micheal and I live in Port Angeles,
+                                    Washington but I am originally from southern California. Thats my dog Lulu in the
+                                    pic! When
+                                    I moved up here I was amazed at how long the night felt in winter and how long the
+                                    days felt in the
+                                    summer.
+                                    To my surprise the actual difference in the change of day length between Washington
+                                    and California
+                                    isn't
+                                    all
+                                    that different. See below...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-0 about-me-card-row-adjustment">
+                        <div class="col-md-6">
+                            <table class="table table-striped profile-table-background-color">
+                                <h3>Port Angeles, Washington</h3>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Event
+                                        </th>
+                                        <th>
+                                            Date (local)
+                                        </th>
+                                        <th>
+                                            Day length
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Spring Equinox
+                                        </td>
+                                        <td>
+                                            Mar 20, 2025
+                                        </td>
+                                        <td>
+                                            <strong>12:11:28</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Summer Solstice
+                                        </td>
+                                        <td>
+                                            Jun 21, 2025
+                                        </td>
+                                        <td>
+                                            <strong>16:03:50</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Fall Equinox
+                                        </td>
+                                        <td>
+                                            Sep 22, 2025
+                                        </td>
+                                        <td>
+                                            <strong>12:09:30</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Winter Solstice
+                                        </td>
+                                        <td>
+                                            Dec 21, 2025
+                                        </td>
+                                        <td>
+                                            <strong>08:21:13</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6">
+                            <table class="table table-striped profile-table-background-color">
+                                <h3>Los Angeles, California</h3>
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Event
+                                        </th>
+                                        <th>
+                                            Date (local)
+                                        </th>
+                                        <th>
+                                            Day length
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Spring Equinox
+                                        </td>
+                                        <td>
+                                            Mar 20, 2025
+                                        </td>
+                                        <td>
+                                            <strong>12:08:51</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Summer Solstice
+                                        </td>
+                                        <td>
+                                            Jun 21, 2025
+                                        </td>
+                                        <td>
+                                            <strong>14:25:32</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Fall Equinox
+                                        </td>
+                                        <td>
+                                            Sep 22, 2025
+                                        </td>
+                                        <td>
+                                            <strong>12:07:42</strong>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Winter Solstice
+                                        </td>
+                                        <td>
+                                            Dec 21, 2025
+                                        </td>
+                                        <td>
+                                            <strong>09:53:04</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+        <section id="codingjourney">
+
+            <div class="mt-5 col-10 mx-auto">
+                <div class="card mb-3">
+                    <div class="card-header cust-card-header">
+                        My Coding Journey
+                    </div>
+                    <img src="images/profile-coding-journey-1.png" class="img-fluid" alt="...">
+                    <div class="row g-0">
+                        <div class="col">
+
+                        </div>
+                    </div>
+                    <div class="row g-0 about-me-card-row-adjustment">
+
+
+
+
+                        <div class="col-md-8">
+
+                            <p class="profile-p-margin-adst pt-md-5">Prior to this course I have worked through some
+                                <a href="https://www.freecodecamp.org/" target="_blank">Freecodecamp</a>/<a
+                                    href="https://www.codecademy.com/" target="_blank">Codecademy</a> HTMT, CSS, and
+                                JavaScript
+                                courses
+                                and
+                                used chatGPT to help me figure out how to push code to GitHub and use their <a
+                                    href="https://docs.github.com/en/pages" target="_blank">pages feature</a> to host my
+                                first
+                                coding
+                                experiments. Additionally, I took an
+                                intro to <a href="https://codemify.com/" target="_blank">QA automation course</a> which
+                                introduced
+                                me to
+                                some really cool software (<a href="https://www.cypress.io/"
+                                    target="_blank">cypress</a>) and was a
+                                great
+                                crashcourse into javascript and the CLI.
+                            </p>
+
+                        </div>
+
+                        <div class="col-md-4 about-me-card-image-adjs">
+                            <img src="images/profile-coding-journey-2.png" class="img-fluid" alt="...">
+
+
+
+                        </div>
+                    </div>
+                    <div class="row  g-0 about-me-card-row-adjustment">
+                        <div class="col-md-8">
+                            <p class="profile-p-margin-adst">
+                                I'm looking forward to this Web Development Fundamentals course and the following Full
+                                Stack Web Mobile
+                                Development course I'm taking immediately after this one. What I am most looking forward
+                                to is seeing it
+                                all
+                                come together. For example: Making a form in html, styling it in css, and then using an
+                                assortment of
+                                languages and systems for the back end? I don't know the specifics yet but I am excited
+                                to find out!
+                            </p>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="text-center">Free Resources</h3>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><a href="https://www.freecodecamp.org/"
+                                        target="_blank">Freecodecamp</a></li>
+                                <li class="list-group-item"><a href="https://www.codecademy.com/"
+                                        target="_blank">Codecademy</a></li>
+                                <li class="list-group-item"><a href="https://codemify.com/" target="_blank">QA
+                                        automation course</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+        <section id="mytime">
+
+
+
+            <div class="mt-5 col-10 mx-auto">
+                <div class="card mb-3">
+                    <div class="card-header cust-card-header">
+                        How I Spend My Free Time
+                    </div>
+
+                    <img src="images/profile-images-camp-lu.png" class="img-fluid" alt="...">
+
+                    <div class="card-body cust-card-body">
+                        <p>I like to spend a lot of time outdoors. It is a huge reason why I moved to Washington.
+                            Additionally, I
+                            have a
+                            dog who's happiest outside, running around all day. It's a win-win situation. My
+                            favorite outdoor
+                            activities
+                            are:
+                        </p>
+                    </div>
+
+                    <div class="row  px-2 align-items-center g-0 about-me-card-row-adjustment">
+
+
+                        <div class="col-lg-8">
+                            <ul class="list-group text-center">
+                                <li class="list-group-item">Camping</li>
+                                <li class="list-group-item">Hiking</li>
+                                <li class="list-group-item">Backpacking</li>
+                                <li class="list-group-item">SUPs</li>
+                                <li class="list-group-item">Hangin out in my van down by the river</li>
+                                <li class="list-group-item"><audio src="mp3s/river-audio-clip-profile page.mp3"
+                                        controls>Your browser does not
+                                        support HTML5 audio.
+                                        Here
+                                        is <a href="mp3s/river-audio-clip-profile page.mp3">link to the
+                                            audio</a> instead.</audio></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 about-me-card-image-adjs">
+                            <img src="images/profile-lu-board-sqr.png" class="img-fluid" alt="...">
+                        </div>
+
+
+                    </div>
+                    <div class="row  g-0 about-me-card-row-adjustment"></div>
+                    <div class="card-body cust-card-body">
+                        <p>My absolute favorite way to spend my time not working is camping by a lake or river and
+                            watching my dog
+                            do
+                            this all day (see video below)
+                        </p>
+                        <div class="ratio ratio-16x9">
+                            <video class="border rounded" src="videos/my-profile-lu-swimming.mov" controls
+                                        >
+                                        Your broweser does not support HTML5 video. Here is <a
+                                            href="videos/install-extension.mp4">link
+                                            to
+                                            the
+                                            video</a> instead.
+                                    </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+
+
+
+        
+        <section id="tellmeaboutyou">
+
+
+
+
+            <div class="col-10 pb-5 mx-auto">
+                <div class="card">
+                    <div class="card-header cust-card-header">
+                        <h2>What Are Your Favorite Activities?</h2>
+                    </div>
+                    <img src="images/jas-cro-surv-image.png" class="img-fluid" alt="...">
+                    <div class="card-body cust-card-body">
+                        <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
+                            method="post" target="_blank">
+                            <fieldset>
+                                <legend>CONTACT INFO</legend>
+                                <div>
+                                    <label class="form-label" for="firstName">First name: </label>
+                                    <input class="form-control" name="firstName" type="text" id="firstName"
+                                        placeholder="Your first name" required />
+                                </div>
+                                <div>
+                                    <label class="form-label" for="lastName">Last name: </label>
+                                    <input class="form-control" name="lastName" type="text" id="lastName"
+                                        placeholder="Your last name" required />
+                                </div>
+                                <div>
+                                    <label class="form-label" for="email">Email: </label>
+                                    <input class="form-control" name="email" type="email" id="email"
+                                        placeholder="Your last name" required />
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="py-3">WHAT IS YOUR POLITICAL AFFILIATION?</legend>
+                                <div>
+                                    <input class="form-check-input" type="radio" id="democrat" value="democrat"
+                                        name="politicalAff" />
+                                    <label class="form-check-label" for="democrat">Democrat</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" id="republican" value="republican"
+                                        name="politicalAff" />
+                                    <label class="form-check-label" for="republican">Republican</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" id="independent" value="independent"
+                                        name="politicalAff" />
+                                    <label class="form-check-label" for="independent">Independent</label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" id="notsaying" value="notsaying"
+                                        name="politicalAff" />
+                                    <label class="form-check-label" for="notsaying">Prefer not to say</label>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="py-3">HOW MUCH DO YOU LIKE JASMINE CROCKETT?</legend>
+                                <div class="row">
+                                    <div class="col-10">
+                                        <input class="form-range" id="oneToOneHundredRating"
+                                            name="oneToOneHundredRating" type="range" min="0" max="100" value="100">
+                                    </div>
+                                    <div class="col-2">
+                                        <output for="range4" id="rangeValue" aria-hidden="true"></output>
+                                        <script>
+                                            // This is an example script, please modify as needed
+                                            const rangeInput = document.getElementById('oneToOneHundredRating');
+                                            const rangeOutput = document.getElementById('rangeValue');
+
+                                            // Set initial value
+                                            rangeOutput.textContent = rangeInput.value;
+
+                                            rangeInput.addEventListener('input', function () {
+                                                rangeOutput.textContent = this.value;
+                                            });
+                                        </script>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>YOUR FAVORITE JASMINE CROCKETT STORY</legend>
+                                <textarea class="form-control" id="favStory" name="favStory" rows="10"
+                                    placeholder="Your story here"></textarea>
+                            </fieldset>
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" class="w-75 my-2 btn btn-primary" value="Submit Form" />
+                            </div>
+                            <img src="images/jas-cro-point.png" class="img-fluid" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <h2>What are your favorite activities?</h2>
+            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
+                target="_blank">
+                <fieldset>
+                    <legend>Contact Info</legend>
+                    <div>
+                        <label for="firstName">First Name: </label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Your First Name" />
+                        <label for="lastName">Last Name: </label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" />
+                    </div>
+                    <div>
+                        <label for="email">Your Email: </label>
+                        <input type="email" id="email" name="email" placeholder="Your Email Address" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Type of Activities</legend>
+                    <div>
+                        <label for="likeOutside">Do you like the outdoors?:</label><br>
+                        <select id="likeOutside" name="likeOutside">
+                            <option value="">Choose and option</option>
+                            <option value="yes">Yes</option>
+                            <option value="sorta">Yes but only to look at</option>
+                            <option value="no">Not really</option>
+                        </select>
+
+                        <!--
                     <input type="radio" id="yes" name="doyoulike" value="yes" />
                     <label for="baseball">Yes, I like outdoor activities</label>
                     <input type="radio" id="sorta" name="doyoulike" value="sorta" />
@@ -265,45 +533,63 @@
                     <label for="no">Not really</label> 
 
                     -->
+                    </div>
+                    <br>
+                    <div>
+                        Select all the activities that you like.
+                        <div>
+                            <input type="checkbox" id="hiking" name="activities" value="hiking" />
+                            <label for="hiking">Hiking</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="walk" name="activities" value="walk" />
+                            <label for="walk">A walk on the beach</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="skydiving" name="activities" value="skydiving" />
+                            <label for="skydiving">Skydiving</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="camping" name="activities" value="camping" />
+                            <label for="camping">Camping</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="other" name="activities" value="other" />
+                            <label for="other">I like other activities</label>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Did we leave some activities out? Let me know if your words how you like to spend your time
+                    </legend>
+                    <textarea id="ownwords" name="ownwords" rows="10" cols="60"
+                        placeholder="Your story here"></textarea>
+                </fieldset>
+                <img src="images/profile-image-2-of-lu.png" class="img-fluid" />
+                <input type="submit" />
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER SECTION -->
+
+    <div class="footer-image">
+        <footer class="container text-end">
+            <div class="row">
+                <div class="col">
+                    <p><i class="fa-solid fa-copyright fa-lg" style="color: #1C3424;"></i> 2025 Michael Kaffel | <a
+                            href="index.html"><i class="fa-solid fa-house fa-lg" style="color: #1C3424;"></i></a> | <a
+                            href="https://github.com/michaelkaffel" target="_blank"><i class="fa-brands fa-github fa-lg"
+                                style="color: #1C3424;"></i></a> | <a href="index.html"><img src="images/mk-logo.svg"
+                                width="20" /></a>
+                    </p>
                 </div>
-                <br>
-                <div>
-                    Select all the activities that you like.
-                    <div>
-                        <input type="checkbox" id="hiking" name="activities" value="hiking" />
-                        <label for="hiking">Hiking</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="walk" name="activities" value="walk" />
-                        <label for="walk">A walk on the beach</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="skydiving" name="activities" value="skydiving" />
-                        <label for="skydiving">Skydiving</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="camping" name="activities" value="camping" />
-                        <label for="camping">Camping</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="other" name="activities" value="other" />
-                        <label for="other">I like other activities</label>
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset>
-                <legend>Did we leave some activities out? Let me know if your words how you like to spend your time
-                </legend>
-                <textarea id="ownwords" name="ownwords" rows="20" cols="60" placeholder="Your story here"></textarea>
-                <img src="images/profile-image-2-of-lu.png" width="589" />
-            </fieldset>
-            <input type="submit" />
-        </form>
-    </section>
-    <footer>
-        <a href="index.html"><img src="images/mk-logo.svg" width="15" /></a> | © 2025 Michael Kaffel | <a
-            href="index.html">Home</a> | <a href="https://github.com/michaelkaffel" target="_blank">My GitHub</a>
-    </footer>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 
 
 </body>

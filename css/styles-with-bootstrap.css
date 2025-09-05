@@ -151,23 +151,28 @@ img.hello-world {
     border-bottom: black solid 3px;
 }
 
-.card-body {
-     background-color: #FDF2CD;
-     border-bottom-left-radius: 7px;
-     border-bottom-right-radius: 7px;
-     border-top: solid black 1px;
+.vs-code-body-border {
+    /* background-color: #FDF2CD; */
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-top: solid black 1px;
 }
 
-.card-header {
-   background-color: #63AAB8; 
-}
-
-.card-header {
+.cust-card-header {
+    background-color: #63AAB8;
     color: #FDF2CD;
     font-size: 1.7em;
 }
 
-.card-background {
+.cust-card-body {
+    background-color: #FDF2CD;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+
+.vs-code-card-background {
     margin-bottom: 15px;
 }
 
@@ -233,4 +238,45 @@ img.hello-world {
 
 .jas-cro-into-background {
     background-color: #FDF2CD;
+}
+
+/* PROFILE PAGE */
+
+.profile-hero-img {
+    background-image: url(../images/profile-page-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
+.profile-table-background-color {
+    background-color: whitesmoke;
+}
+
+.cust-profile-card-side-pic-background {
+   background-color: #FDF2CD;
+   border-bottom-right-radius: 7px; 
+   border-bottom-left-radius: 7px;
+}
+
+.about-me-card-image-adjs {
+   background-color: #FDF2CD;
+   border-bottom-left-radius: 7px;
+}
+
+.about-me-card-row-adjustment {
+    background-color: #FDF2CD;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    
+}
+
+.about-me-card-row-adjustment h3 {
+    text-align: center;
+    color: #63AAB8;
+}
+
+.profile-p-margin-adst {
+    padding-left: 10px;
+    padding-right: 10px;
 }
