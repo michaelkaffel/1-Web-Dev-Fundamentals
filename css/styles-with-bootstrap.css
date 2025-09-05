@@ -1,5 +1,9 @@
 /* GLOBAL STYLING */
 
+/* * {
+    border: red solid 1px;
+} */
+
 
 body {
     font-family: "Kumbh Sans", "Asimovian";
@@ -193,3 +197,40 @@ img.hello-world {
     border-bottom: black solid 3px;
 }
 
+/* FIRST SURVEY */
+
+.survey-hero-img {
+    background-image: url(../images/first-survey-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
+.your-info-legend {
+    background-color: #63AAB8;
+    border: solid black 1px;
+}
+
+.form-background-color {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 12px;
+    border: solid black 1px;
+}
+
+/* FANPAGE */
+
+.fanpage-hero-img {
+    background-image: url(../images/fanpage-hero-image.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
+.jas-cro-fanpage-images {
+    border-radius: 12px;
+}
+
+.jas-cro-into-background {
+    background-color: #FDF2CD;
+}
