@@ -38,15 +38,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item cust-link-style me-3">
                         <a class="nav-link" aria-current="page" href="index.html"><i class="fa-solid fa-house fa-lg"
                                 style="color: #1C3424;"></i> Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item cust-link-style me-3">
                         <a class="nav-link" href="#"><i class="fa-solid fa-file fa-lg" style="color: #1C3424;"></i>
                             Projects</a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown cust-link-style me-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-list-check fa-lg" style="color: #1C3424;"></i> Assignments
@@ -378,17 +378,16 @@
                         <p>My absolute favorite way to spend my time not working is camping by a lake or river and
                             watching my dog
                             do
-                            this all day (see video below)
+                            this all day.
                         </p>
                         <div class="ratio ratio-16x9">
-                            <video class="border rounded" src="videos/my-profile-lu-swimming.mov" controls
-                                        >
-                                        Your broweser does not support HTML5 video. Here is <a
-                                            href="videos/install-extension.mp4">link
-                                            to
-                                            the
-                                            video</a> instead.
-                                    </video>
+                            <video class="border rounded" src="videos/my-profile-lu-swimming.mov" controls>
+                                Your broweser does not support HTML5 video. Here is <a
+                                    href="videos/install-extension.mp4">link
+                                    to
+                                    the
+                                    video</a> instead.
+                            </video>
                         </div>
                     </div>
                 </div>
@@ -400,7 +399,7 @@
 
 
 
-        
+
         <section id="tellmeaboutyou">
 
 
@@ -411,120 +410,52 @@
                     <div class="card-header cust-card-header">
                         <h2>What Are Your Favorite Activities?</h2>
                     </div>
-                    <img src="images/jas-cro-surv-image.png" class="img-fluid" alt="...">
+                    <img src="images/profile-page-survey-header.png" class="img-fluid" alt="...">
                     <div class="card-body cust-card-body">
                         <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata"
                             method="post" target="_blank">
                             <fieldset>
                                 <legend>CONTACT INFO</legend>
-                                <div>
-                                    <label class="form-label" for="firstName">First name: </label>
-                                    <input class="form-control" name="firstName" type="text" id="firstName"
-                                        placeholder="Your first name" required />
-                                </div>
-                                <div>
-                                    <label class="form-label" for="lastName">Last name: </label>
-                                    <input class="form-control" name="lastName" type="text" id="lastName"
-                                        placeholder="Your last name" required />
-                                </div>
-                                <div>
-                                    <label class="form-label" for="email">Email: </label>
-                                    <input class="form-control" name="email" type="email" id="email"
-                                        placeholder="Your last name" required />
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend class="py-3">WHAT IS YOUR POLITICAL AFFILIATION?</legend>
-                                <div>
-                                    <input class="form-check-input" type="radio" id="democrat" value="democrat"
-                                        name="politicalAff" />
-                                    <label class="form-check-label" for="democrat">Democrat</label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" id="republican" value="republican"
-                                        name="politicalAff" />
-                                    <label class="form-check-label" for="republican">Republican</label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" id="independent" value="independent"
-                                        name="politicalAff" />
-                                    <label class="form-check-label" for="independent">Independent</label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" id="notsaying" value="notsaying"
-                                        name="politicalAff" />
-                                    <label class="form-check-label" for="notsaying">Prefer not to say</label>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend class="py-3">HOW MUCH DO YOU LIKE JASMINE CROCKETT?</legend>
                                 <div class="row">
-                                    <div class="col-10">
-                                        <input class="form-range" id="oneToOneHundredRating"
-                                            name="oneToOneHundredRating" type="range" min="0" max="100" value="100">
+                                    <div class="col-md-6 mb-3">
+                                        <!-- <label class="form-label" for="firstName">First Name: </label> -->
+                                        <input class="form-control" type="text" id="firstName" name="firstName"
+                                            placeholder="First Name" aria-label="First name" />
                                     </div>
-                                    <div class="col-2">
-                                        <output for="range4" id="rangeValue" aria-hidden="true"></output>
-                                        <script>
-                                            // This is an example script, please modify as needed
-                                            const rangeInput = document.getElementById('oneToOneHundredRating');
-                                            const rangeOutput = document.getElementById('rangeValue');
-
-                                            // Set initial value
-                                            rangeOutput.textContent = rangeInput.value;
-
-                                            rangeInput.addEventListener('input', function () {
-                                                rangeOutput.textContent = this.value;
-                                            });
-                                        </script>
+                                    <div class="col-md-6 mb-3">
+                                        <!-- <label class="form-label" for="lastName">Last Name: </label> -->
+                                        <input class="form-control" type="text" id="lastName" name="lastName"
+                                            placeholder="Last Name" aria-label="Last name" />
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <input class="form-control" type="email" id="email" name="email"
+                                            placeholder="Email" aria-label="Email" />
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input class="form-control" placeholder="(800)-555-0000"
+                                            aria-label="(800)-555-0000" type="tel" id="phone" name="phone"
+                                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4} /">
                                     </div>
                                 </div>
                             </fieldset>
                             <fieldset>
-                                <legend>YOUR FAVORITE JASMINE CROCKETT STORY</legend>
-                                <textarea class="form-control" id="favStory" name="favStory" rows="10"
-                                    placeholder="Your story here"></textarea>
-                            </fieldset>
-                            <div class="d-flex justify-content-center">
-                                <input type="submit" class="w-75 my-2 btn btn-primary" value="Submit Form" />
-                            </div>
-                            <img src="images/jas-cro-point.png" class="img-fluid" />
-                        </form>
-                    </div>
-                </div>
-            </div>
+                                <div class="row">
+                                    <legend>Type of Activities</legend>
+                                    <div class="col-md-6 mb-3">
+                                        <div>
+                                            <label class="form-label" for="likeOutside">Do you like the
+                                                outdoors?:</label><br>
+                                            <select class="form-select" aria-label="Choose an option" id="likeOutside"
+                                                name="likeOutside">
+                                                <option selected>Choose an option</option>
+                                                <option value="yes">Yes</option>
+                                                <option value="sorta">Yes but only to look at</option>
+                                                <option value="no">Not really</option>
+                                            </select>
 
-
-
-
-            <h2>What are your favorite activities?</h2>
-            <form action="https://us-central1-nucamp-production.cloudfunctions.net/post/formdata" method="post"
-                target="_blank">
-                <fieldset>
-                    <legend>Contact Info</legend>
-                    <div>
-                        <label for="firstName">First Name: </label>
-                        <input type="text" id="firstName" name="firstName" placeholder="Your First Name" />
-                        <label for="lastName">Last Name: </label>
-                        <input type="text" id="lastName" name="lastName" placeholder="Your Last Name" />
-                    </div>
-                    <div>
-                        <label for="email">Your Email: </label>
-                        <input type="email" id="email" name="email" placeholder="Your Email Address" />
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Type of Activities</legend>
-                    <div>
-                        <label for="likeOutside">Do you like the outdoors?:</label><br>
-                        <select id="likeOutside" name="likeOutside">
-                            <option value="">Choose and option</option>
-                            <option value="yes">Yes</option>
-                            <option value="sorta">Yes but only to look at</option>
-                            <option value="no">Not really</option>
-                        </select>
-
-                        <!--
+                                            <!--
                     <input type="radio" id="yes" name="doyoulike" value="yes" />
                     <label for="baseball">Yes, I like outdoor activities</label>
                     <input type="radio" id="sorta" name="doyoulike" value="sorta" />
@@ -533,41 +464,54 @@
                     <label for="no">Not really</label> 
 
                     -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label>Select all the activities that you like.</label>
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="hiking"
+                                                name="activities" value="hiking" />
+                                            <label class="form-check-label" for="hiking">Hiking</label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="walk" name="activities"
+                                                value="walk" />
+                                            <label class="form-check-label" for="walk">A walk on the beach</label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="skydiving"
+                                                name="activities" value="skydiving" />
+                                            <label class="form-check-label" for="skydiving">Skydiving</label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="camping"
+                                                name="activities" value="camping" />
+                                            <label class="form-check-label" for="camping">Camping</label>
+                                        </div>
+                                        <div>
+                                            <input class="form-check-input" type="checkbox" id="other" name="activities"
+                                                value="other" />
+                                            <label class="form-check-label" for="other">I like other activities</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend>Did we leave some activities out? Let us know in your words how you like to
+                                    spend your time
+                                </legend>
+                                <textarea class="form-control" id="ownwords" name="ownwords" rows="5" cols="60"
+                                    placeholder="Your story here"></textarea>
+                            </fieldset>
+
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" class="w-75 my-2 btn btn-primary" value="Submit Form" />
+                            </div>
+                            <img src="images/profile-image-2-of-lu.png" class="img-fluid" />
+                        </form>
                     </div>
-                    <br>
-                    <div>
-                        Select all the activities that you like.
-                        <div>
-                            <input type="checkbox" id="hiking" name="activities" value="hiking" />
-                            <label for="hiking">Hiking</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="walk" name="activities" value="walk" />
-                            <label for="walk">A walk on the beach</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="skydiving" name="activities" value="skydiving" />
-                            <label for="skydiving">Skydiving</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="camping" name="activities" value="camping" />
-                            <label for="camping">Camping</label>
-                        </div>
-                        <div>
-                            <input type="checkbox" id="other" name="activities" value="other" />
-                            <label for="other">I like other activities</label>
-                        </div>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Did we leave some activities out? Let me know if your words how you like to spend your time
-                    </legend>
-                    <textarea id="ownwords" name="ownwords" rows="10" cols="60"
-                        placeholder="Your story here"></textarea>
-                </fieldset>
-                <img src="images/profile-image-2-of-lu.png" class="img-fluid" />
-                <input type="submit" />
-            </form>
+                </div>
+            </div>
         </section>
     </main>
 

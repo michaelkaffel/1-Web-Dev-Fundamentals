@@ -13,10 +13,26 @@ body {
 /* NAVBAR */
 
 .nav-background {
-    background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
+    /* background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
     background-position: bottom;
     border-top: black solid 3px;
-    border-bottom: black solid 3px;
+    border-bottom: black solid 3px; */
+
+     /* background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
+    background-position: top; */
+    border: black solid 3px;
+     background: rgba(255, 255, 255, 0.2);
+    /* translucent layer */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* max-width: 150px; */
+
+    /* glass blur */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari/WebKit */
+
+    /* optional extras for the "liquid" look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .footer-image {
@@ -31,13 +47,68 @@ body {
 }
 
 .nav-dropdown-background {
-    background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
-    background-position: top;
+    /* background-image: url(../images/vecteezy_circuit-board-electronics-digital-technology-banner_14689876-1.jpg);
+    background-position: top; */
     border: black solid 3px;
+     background: rgba(255, 255, 255, 0.9);
+    /* translucent layer */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* max-width: 150px; */
+
+    /* glass blur */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari/WebKit */
+
+    /* optional extras for the "liquid" look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .footer-full-width {
     width: 100vw;
+}
+
+.cust-link-style {
+    background: rgba(255, 255, 255, 0.2);
+    /* translucent layer */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* max-width: 150px; */
+
+    /* glass blur */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari/WebKit */
+
+    /* optional extras for the "liquid" look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 100px) {
+  .cust-link-style {
+    max-width: 175px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.cust-scrollspy-links {
+    background: rgba(255, 255, 255, 0.2);
+    /* translucent layer */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* max-width: 150px; */
+
+    /* glass blur */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari/WebKit */
+
+    /* optional extras for the "liquid" look */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* HERO */
@@ -202,6 +273,15 @@ img.hello-world {
     border-bottom: black solid 3px;
 }
 
+/* HTML PREVIEW EXT */
+
+.html-preview-ext-hero-img {
+    background-image: url(../images/html-preview-ext-hero.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom: black solid 3px;
+}
+
 /* FIRST SURVEY */
 
 .survey-hero-img {
@@ -254,21 +334,21 @@ img.hello-world {
 }
 
 .cust-profile-card-side-pic-background {
-   background-color: #FDF2CD;
-   border-bottom-right-radius: 7px; 
-   border-bottom-left-radius: 7px;
+    background-color: #FDF2CD;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
 }
 
 .about-me-card-image-adjs {
-   background-color: #FDF2CD;
-   border-bottom-left-radius: 7px;
+    background-color: #FDF2CD;
+    border-bottom-left-radius: 7px;
 }
 
 .about-me-card-row-adjustment {
     background-color: #FDF2CD;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    
+
 }
 
 .about-me-card-row-adjustment h3 {
